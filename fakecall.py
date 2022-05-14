@@ -28,7 +28,7 @@ RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2 = '\033[1;91m', '\033
 def verCheck():
     system('clear')
     print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
-    system('wget -q -O test.txt https://raw.githubusercontent.com/404-ghost/Devil-s-Call/master/version.txt')
+    system('wget -q -O test.txt https://raw.githubusercontent.com/AdamSeliany/FakeCall-ByAdamS-/master/version.txt')
     system('clear')
     file = open('version.txt','r')
     a = file.read()
@@ -49,7 +49,7 @@ def verCheck():
         print("\n{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, x[0], z[0])) 
         print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....{7}\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0] ,GREEN2))
-        system('git checkout HEAD^ data --quiet && git checkout HEAD^ devilscall.py --quiet && git checkout HEAD^ banner.py --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git checkout HEAD^ data --quiet && git checkout HEAD^ fakecall.py --quiet && git checkout HEAD^ banner.py --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ version.txt --quiet')
         system('git stash --quiet')
         system('git pull')
         sleep(1)
@@ -61,7 +61,7 @@ def verCheck():
         print("{0}[{2}*{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}*{0}] {0}[{2}Available{0}]{2}- {0}v.{7}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, x[0], z[0]))
         sleep(1)
         system('clear')
-        print("\n\n\n\t\t{2}[{0}#{2}] {0}Restart program \n {2}Enter this command to run {0}-> {3}python3 devilscall.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+        print("\n\n\n\t\t{2}[{0}#{2}] {0}Restart program \n {2}Enter this command to run {0}-> {3}python3 fakecall.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         exit()
 
 def loadingHack():
